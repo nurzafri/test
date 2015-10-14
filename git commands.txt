@@ -7,3 +7,6 @@
 *git remote -v : check repo link
 *git rm origin : remove repo link
 *git add origin <link repo>
+
+*clone file from github
+forked: git clone <link ssh>
