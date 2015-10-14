@@ -3,3 +3,7 @@
 3. git add .
 4. git commit -m "comment"
 5. git push origin master
+
+*git remote -v : check repo link
+*git rm origin : remove repo link
+*git add origin <link repo>
