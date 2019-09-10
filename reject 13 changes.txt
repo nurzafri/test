@@ -1,0 +1,13 @@
+gantikan if statement yg keyword "AMOUNT ERROR" tu dgn yg ni
+
+else if(reply.InnerXml.ToUpper().Contains("<FILLER_3>010683</FILLER_3>"))
+
+pastu masuk dlm next else utk statement (>= 12)
+
+tmbh 
+
+else if(reply.InnerXml.ToUpper().Contains("<FILLER_3>010683</FILLER_3>"))
+{
+	Rsn.Item = "13";
+        StsRsnInf.Rsn = Rsn;
+}
