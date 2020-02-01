@@ -5,3 +5,23 @@ line baru
 line baru lagi lepas tambah ssh key
 
 test lagi + ali sumpit
+
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        CreateHostBuilder(args).Build().Run();
+    }
+
+    public static IHostBuilder CreateHostBuilder(string[] args) =>
+        Host.CreateDefaultBuilder(args)
+            .UseWindowsService()
+            .ConfigureAppConfiguration((context, config) =>
+            {
+                // configure the app here.
+            })
+            .ConfigureServices((hostContext, services) =>
+            {
+                services.AddHostedService<Worker>();
+            });
+}
